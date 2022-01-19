@@ -22,7 +22,6 @@ application.
 - Learn more about Reinforcement Learning.
 - Learn more about Generative Learning.
 - Learn about AWS microservies.
-- 
 
 
 ## Daily Goals ##
@@ -36,10 +35,18 @@ application.
 
 <h3> Day 2: Deploy a Linear Regression model using Streamlit </h3>
 <ul>
-
+    <li>Read the section about Streamlit-Deployment.</li>
+    <li>Create a simple UI Using Streamlit </li>
+    <li>Deploy the trained Model as REST service </li>
+    <li>Build or Code LSTM model </li>
 </ul>
 
 <h3> Day 3: Deploy a Deep Learning model using Streamlit </h3>
+<ul>
+
+</ul>
+
+<h3> Day 4: Deploy a Deep Learning model using Streamlit </h3>
 <ul>
 
 </ul>
