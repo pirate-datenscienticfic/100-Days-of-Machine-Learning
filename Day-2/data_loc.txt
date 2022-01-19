@@ -1,0 +1,1 @@
+C:\Users\Acer\tensorflow_datasets\imdb_reviews\plain_text
