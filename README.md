@@ -12,6 +12,10 @@ more on the production environment rather than the concepts and theory behind ML
 be applying ML pipeline and the process of taking an ML model and applying into a real-world 
 application.
 
+### Web Resources ###
+
+- [Made with ML](https://madewithml.com/courses/mlops/)
+
 ## Challenge Goals ##
 
 - Learn how to deploy ML models into production.
@@ -43,7 +47,9 @@ application.
 
 <h3> Day 3: Deploy a Deep Learning model using Streamlit </h3>
 <ul>
-
+    <li>Train the LSTM Model</li>
+    <li>Create UI using Streamlit</li>
+    <li>Deploy the trained model as a REST service</li>
 </ul>
 
 <h3> Day 4: Deploy a Deep Learning model using Streamlit </h3>
