@@ -49,10 +49,16 @@ application.
 <ul>
     <li>Train the LSTM Model</li>
     <li>Create UI using Streamlit</li>
-    <li>Deploy the trained model as a REST service</li>
 </ul>
 
 <h3> Day 4: Deploy a Deep Learning model using Streamlit </h3>
+<ul>
+    <li>Debugs the model</li>
+    <li>Deploy the trained model as a REST service</li>
+    <li>Read Chapter-4: ML Deployment using Docker</li>
+</ul>
+
+<h3> Day 5: </h3>
 <ul>
 
 </ul>
