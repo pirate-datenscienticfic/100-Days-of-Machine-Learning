@@ -58,7 +58,14 @@ application.
     <li>Read Chapter-4: ML Deployment using Docker</li>
 </ul>
 
-<h3> Day 5: </h3>
+<h3> Day 5: Deploy using Docker</h3>
+<ul>
+    <li>Create a docker-file for streamlit App</li>
+    <li>Create Docker image</li>
+    <li>Push our Docker image to DockerHub</li>
+</ul>
+
+<h3> Day 6: ML Deployment using Kubernetes</h3>
 <ul>
 
 </ul>
