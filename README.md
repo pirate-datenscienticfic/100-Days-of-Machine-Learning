@@ -60,7 +60,7 @@ application.
 
 <h3> Day 5: Deploy using Docker</h3>
 <ul>
-    <li>Create a docker-file for streamlit App</li>
+    <li>Create a docker-file for Flask App</li>
     <li>Create Docker image</li>
     <li>Push our Docker image to DockerHub</li>
 </ul>
