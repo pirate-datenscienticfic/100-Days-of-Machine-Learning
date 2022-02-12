@@ -67,5 +67,12 @@ application.
 
 <h3> Day 6: ML Deployment using Kubernetes</h3>
 <ul>
+    <li>Read chapter 5: ML Deployment using Kubernetes</li>
+    <li>Create GCP Project</li>
+    <li>Enable and Utilize the Kubernetes Engine API or GCP</li>
+</ul>
 
+<h3> Day 7: </h3>
+<ul>
+    <li> </li>
 </ul>

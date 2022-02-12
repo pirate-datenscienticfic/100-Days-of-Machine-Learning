@@ -1,4 +1,4 @@
-from distutils.log import debug
+# from distutils.log import debug
 from flask import Flask, request, render_template
 import numpy as np
 import pickle
@@ -12,32 +12,49 @@ import joblib
 app = Flask(__name__)
 Swagger(app)
 
-@app.route("/")
-def hello():
-    return render_template("home.html")
+model = open("linear_regression_model.pkl", 'rb')
+lr_model = joblib.load(model)
 
 
 @app.route('/predict', methods=["GET", "POST"])
 def predict():
+    """Returns the predicted value from the ML model
+    ---
+    parameters:
+        - name: alcohol
+          in: query
+          type: number
+          required: true
+        - name: volatile acidity
+          in: query
+          type: number
+          required: true
+        - name: sulphates
+          in: query
+          type: number
+          required: true
+        - name: total sulfur dioxide
+          in: query
+          type: number
+          required: true
+    responses:
+        500:
+            description: Prediction
+    """
     if request.method == "POST":
-        print(request.form.get("alcohol"))
-        print(request.form.get("volatile acidity"))
-        print(request.form.get("sulphates"))
-        print(request.form.get("total sulfur dioxide"))
+        print(request.args.get("alcohol"))
+        print(request.args.get("volatile acidity"))
+        print(request.args.get("sulphates"))
+        print(request.args.get("total sulfur dioxide"))
         try:
-            alc = float(request.form.get("alcohol"))
-            vol = float(request.form.get("volatile acidity"))
-            sul = float(request.form.get("sulphates"))
-            dio = float(request.form.get("total sulfur dioxide"))
+            alc = float(request.args.get("alcohol"))
+            vol = float(request.args.get("volatile acidity"))
+            sul = float(request.args.get("sulphates"))
+            dio = float(request.args.get("total sulfur dioxide"))
 
             pred_arg = [alc, vol, sul, dio]
-            #print(pred_arg)
             pred_arg = np.array(pred_arg)
             pred_arg = pred_arg.reshape(1, -1)
-            
-            model = open("linear_regression_model.pkl", 'rb')
-            lr_model = joblib.load(model)
-            
             
             try:
                 model_pred = lr_model.predict(pred_arg)
@@ -45,15 +62,14 @@ def predict():
                 
             except Exception as e:
                 return str(e)
-            
-            
+                        
         except ValueError:
             return "Please Enter Valid Values"
 
-    return render_template("predict.html", prediction=model_pred)
+    return str("The predicted value is: "+ str(model_pred))
 
 
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0")
 
   
