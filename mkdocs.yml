@@ -1,0 +1,14 @@
+# Project Information
+site_name: 100-Days-of-Machine-Learning
+site_description: Deploys a Linear Regression model
+site_author: Shubham Yadav
+
+# Repository
+repo_url: https://github.com/pirate-datenscienticfic/100-Days-of-Machine-Learning
+repo_name: pirate-datenscienticfic/100-Days-of-Machine-Learning
+edit_uri: ""
+
+# Page Tree
+nav:
+  - Home:
+      - 100-Days-of-Machine-Learning: README.md

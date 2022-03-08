@@ -21,6 +21,16 @@ def hello():
 
 @app.route('/predict', methods=["GET", "POST"])
 def predict():
+    """ : Loads in trained model and performs prediction using user data
+    Args:
+        None
+    Raises:
+        ValueError: If the Input does not meet data type requirements
+
+    Returns:
+        A render template object with the predicted value
+    :return:
+    """
     if request.method == "POST":
         print(request.form.get("alcohol"))
         print(request.form.get("volatile acidity"))
