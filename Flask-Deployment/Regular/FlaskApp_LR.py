@@ -5,12 +5,11 @@ Created on Wed Jan  5 12:22:37 2022
 @author: Acer
 """
 
-import pandas as pd
-import numpy as np
-from flask import Flask, render_template, request
-import sklearn
 import joblib
-
+import numpy as np
+import pandas as pd
+import sklearn
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 

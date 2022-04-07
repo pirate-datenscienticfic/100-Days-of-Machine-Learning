@@ -18,14 +18,15 @@ application.
 
 ## Challenge Goals ##
 
-- Learn how to deploy ML models into production.
-- Learn about the ML Pipeline.
-- Learn more about privacy & protection for ML applications.
-- Learn the CI/CD for ML.
-- Learn about CUDA and get hands on Experience.
-- Learn more about Reinforcement Learning.
-- Learn more about Generative Learning.
-- Learn about AWS microservies.
+- [x] Learn how to deploy ML models into production.
+- [x] Learn about scripting for MLOps.
+- [ ] Learn about the ML Pipeline.
+- [ ] Learn more about privacy & protection for ML applications.
+- [ ] Learn the CI/CD for ML.
+- [ ] Learn about CUDA and get hands-on Experience.
+- [ ] Learn more about Reinforcement Learning.
+- [ ] Learn more about Generative Learning.
+- [ ] Learn about AWS microservices.
 
 
 ## Daily Goals ##
@@ -74,11 +75,19 @@ application.
 
 <h3> Day 7: Scripting</h3>
 <ul>
-    <li>Read topics under scripting from Websites [MadeWithML](https://madewithml.com/courses/mlops/packaging/) </li>
+    <li>Read topics under scripting from Websites</li>
+- [MadeWithML](https://madewithml.com/courses/mlops/packaging/)
     <li>Apply learning by adding it to current projects</li>
 </ul>
 
-<h3> Day 8: </h3>
+<h3> Day 8: Reading Building ML Pipelines</h3>
 <ul>
-    <li> </li>
+    <li>Read Chap1: Introduction to ML Pipelines </li>
+    <li>Read Chap2: Introduction to TensorFlow Extended</li>
+</ul>
+
+<h3>Day 9: Reading Building ML Pipelines</h3>
+<ul>
+    <li>Read Chap3: Data Ingestion</li>
+    <li>Read Chap4: Data Validation</li>
 </ul>

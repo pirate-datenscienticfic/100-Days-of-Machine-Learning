@@ -5,12 +5,11 @@ Created on Wed Jan  5 12:35:51 2022
 @author: Acer
 """
 
+import joblib
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-import joblib
-
 
 df = pd.read_csv("winequality-white.csv", sep=";")
 print(df.head())

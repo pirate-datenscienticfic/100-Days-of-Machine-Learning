@@ -1,6 +1,6 @@
-import pandas as pd
-import numpy as np
 import joblib
+import numpy as np
+import pandas as pd
 import streamlit
 
 model = open(".\Streamlit-Deployment\linear_regression_model_for_Streamlit.pkl", "rb")

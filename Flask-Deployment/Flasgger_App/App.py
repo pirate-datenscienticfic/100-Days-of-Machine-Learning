@@ -1,13 +1,13 @@
 # from distutils.log import debug
-from flask import Flask, request, render_template
-import numpy as np
 import pickle
-import pandas as pd
-import flasgger
-from flasgger import Swagger
-import sklearn
-import joblib
 
+import flasgger
+import joblib
+import numpy as np
+import pandas as pd
+import sklearn
+from flasgger import Swagger
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 Swagger(app)
